@@ -36,9 +36,9 @@ document.querySelectorAll('.winestyle').forEach(item => {
       //define what winecolor is => grab the dataset set in my li and set it to the url
       const winecolor = item.getAttribute("data-winestyle")
       //pass the vintage into the url
-      const vintage = 2001
+      var vintage = 2000
       //pass the number of result into the
-      const numOfResults = 10 
+      var numOfResults = 5
       const url = 
             `https://api.globalwinescore.com/globalwinescores/latest/?vintage=${vintage}&color=${winecolor}&limit=${numOfResults}`
       console.log(url)

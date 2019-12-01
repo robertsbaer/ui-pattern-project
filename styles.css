@@ -58,6 +58,15 @@ nav{
     transition: all 0.3s ease;
 }
 
+/* css for javascript ul and li*/
+#content{
+    text-align: center;    
+}
+
+#winelist{
+    list-style: none;
+}
+
 @media screen and (max-width: 1100px){
     .nav-link{
         width: 60%;
