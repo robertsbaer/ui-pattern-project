@@ -68,10 +68,11 @@ document.querySelectorAll('.winestyle').forEach(item => {
             node.appendChild(textnode)
             nodeList.appendChild(node)
         }
-        winelist.innerHTML=nodeList
+        winelist.innerHTML = nodeList.innerHTML 
     })
+      //error code for when array is empty
       .catch(err => {
         winelist.innerHTML="Nothing Found for this vintage"
-    });
+    })
   })
 })                        
