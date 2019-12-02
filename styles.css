@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: deepskyblue;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -60,11 +64,21 @@ nav{
 
 /* css for javascript ul and li*/
 #content{
-    text-align: center;    
+    text-align: center;
+    padding-top: 50px;
 }
+
+#content li{
+    line-height: 40px;
+}
+
 
 #winelist{
     list-style: none;
+    background-color: lightgoldenrodyellow;
+    margin: auto;
+    width: 90%;
+    border-radius: 4%;
 }
 
 @media screen and (max-width: 1100px){

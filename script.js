@@ -36,7 +36,7 @@ document.querySelectorAll('.winestyle').forEach(item => {
       //define what winecolor is => grab the dataset set in my li and set it to the url
       const winecolor = item.getAttribute("data-winestyle")
       //pass the vintage into the url
-      var vintage = 2000
+      const vintage = 2000
       //pass the number of result into the
       var numOfResults = 5
       const url = 
@@ -59,7 +59,7 @@ document.querySelectorAll('.winestyle').forEach(item => {
         winelist.innerHTML = ""
         //this console's the entire array
         console.log(redWines)
-        const nodeList = document.createElement("UL")
+        const nodeList = document.createElement("OL")
         for(var i = 0; i<numOfResults; i++){
 //            console.log(console.log(redWines[i])
             const wineName = redWines[i].wine
