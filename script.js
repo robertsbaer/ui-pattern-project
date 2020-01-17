@@ -36,11 +36,11 @@ document.querySelectorAll('.winestyle').forEach(item => {
       //define what winecolor is => grab the dataset set in my li and set it to the url
       const winecolor = item.getAttribute("data-winestyle")
       //pass the vintage into the url
-      const vintage = 2000
+      const vintage = 2014
       //pass the number of result into the
-      var numOfResults = 5
+      var numOfResults = 1
       const url = 
-            `https://api.globalwinescore.com/globalwinescores/latest/?vintage=${vintage}&color=${winecolor}&limit=${numOfResults}`
+            `https://private-anon-4193a33fde-globalwinescore.apiary-mock.com/globalwinescores/latest/?vintage=${vintage}&color=${winecolor}&limit=${numOfResults}`
       console.log(url)
     //headers grabs the Authorization and uses the GET method
     const otherParam={
@@ -64,7 +64,7 @@ document.querySelectorAll('.winestyle').forEach(item => {
 //            console.log(console.log(redWines[i])
             const wineName = redWines[i].wine
             const textnode = document.createTextNode(wineName);
-            var node = document.createElement("LI");
+            var node = document.createElement("li");
             node.appendChild(textnode)
             nodeList.appendChild(node)
         }
